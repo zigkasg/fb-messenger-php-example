@@ -204,7 +204,7 @@ if (!empty($_REQUEST['hub_mode']) && $_REQUEST['hub_mode'] == 'subscribe' && $_R
 
                 // Other message received
                 default:
-                    $bot->send(new Message($message['sender']['id'], 'Sorry. I don’t understand you.'.$command));
+                    $bot->send(new Message($message['sender']['id'], 'Sorry. I don’t understand you.'));
             }
         }
     }
